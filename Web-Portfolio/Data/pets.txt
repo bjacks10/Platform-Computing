@@ -1,0 +1,8 @@
+rosie,Dog,images/puppy.jpg
+rosie,Dog,images/puppy.jpg
+rosie,Dog,images/puppy.jpg
+rosie,Dog,images/puppy.jpg
+rosie,Dog,images/puppy.jpg
+beebe,Dog,images/boo.jpg
+rosie,Dog,images/camping.jpg
+rosie,Dog,images/camping.jpg

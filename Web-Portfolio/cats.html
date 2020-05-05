@@ -1,0 +1,31 @@
+<html>
+<head>
+    <script>
+    /*documention for XMLHttpRequest
+    https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest */
+    var getCatImage = function() {
+    var request = new XMLHttpRequest();
+    request.open("GET",
+    "https://api.thecatapi.com/v1/images/search",true );
+    
+    /*doc onload event*/
+    request.onload = function() {
+        /*this returns a JSON object
+        a JSON object is a key value pair */
+        var dataArray = JSON.parse(this.response);
+        //this refers to the image src
+        var data = dataArray[0];
+        var imageSrc = data.url;
+       
+        document.getElementById("myImg").src = imageSrc;
+         // document.write(setUp+"<br>");
+        //document.write(punchline);
+    };    
+    request.send();
+    }
+</script>
+</head>
+<body onload="getCatImage()">
+<img id="myImg" src="" width="107" height="98">
+<button onclick="getCatImage()">Get another</button>
+</body>

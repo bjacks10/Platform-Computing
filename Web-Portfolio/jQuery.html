@@ -1,0 +1,82 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <!--"import" jQuery libary from google-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> 
+</script> 
+    <style type="text/css"> 
+    /*This creates a circle*/
+		#e5 { 
+			width: 100px; 
+			height: 100px; 
+			border-radius: 0px; 
+			background-color: aqua; 
+		} 
+	</style> 
+	<script>
+			$(function(){
+			$("#e7").hide();
+		});
+	</script>	
+</head> 
+<body> 
+    <!--Here we create 3 paragraphs, an text input type, 5 buttons,
+    and an empty div to hold the circles.
+    Each element has an id. We manipulate the element by the id
+    using jQuery-->
+	<p id="e1">Welcome.</p> 
+	<p id="e2">Learn and Explore</p> 
+	<p> 
+        <input type="text" id="e3" value="jQuery is powerful!" /> 
+	</p> 
+	<p id="e4" align="left">Geeks for Geeks</p> 
+	<p> 
+		<div id="e5"></div> 
+	</p> 
+	<p>
+		<img id ="e6" src ="Images/puppy.jpg"/>
+	</p>
+	<p id="e7">Learn more about jQuery at <a href="https://www.geeksforgeeks.com">Geeks for Geeks</a> </p>
+	
+	<button id="gfg1">Change Text</button> 
+	<button id="gfg2">Change HTML</button> 
+	<button id="gfg3">Change Value</button> 
+	<button id="gfg4">Change Alignment</button> 
+	<button id="gfg5">Change Shape</button> 
+	<button id="gfg6">Change Image</button>
+	<button id="gfg7">For More Info</button>
+	
+    
+	<script>
+    /*Using jQuery's event methods, we specify what to do with each
+    element id when a button is clicked*/ 
+    //set the text on the p with the id e1 when button with id gfg1 is clicked
+		$("#gfg1").click(function() { 
+			$("#e1").text("Geeks for Geeks"); 
+		}); 
+        //set the html on the p with the id e2 when button with id gfg2 is clicked
+		$("#gfg2").click(function() { 
+			$("#e2").html("<b>Enrich your Knowledge.</b>"); 
+		}); 
+        //set the val on the text input with id e3 when button with id gfg3 is clicked
+		$("#gfg3").click(function() { 
+			$("#e3").val("jQuery at Geeks for Geeks"); 
+		}); 
+        //set the attribute on the p with the id e4 when button with id gfg4 is clicked
+		$("#gfg4").click(function() { 
+			$("#e4").attr("align", "center"); 
+		}); 
+        //set the css on p with id e5 when button with id gfg5 is clicked
+		$("#gfg5").click(function() { 
+			$("#e5").css("border-radius", "50px"); 
+		});
+		$("#gfg6").click(function(){
+			$("#e6").attr("src","Images/boo.jpg");
+		});
+		$("#gfg7").click(function(){
+			$("#e7").show();
+		});
+	</script> 
+</body> 
+
+</html> 

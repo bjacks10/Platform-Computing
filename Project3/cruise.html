@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link type = "text/css" rel = "stylesheet" href= "styles.css" media="screen">
+    <title>Cruise Page: Travel Website</title>
+  </head>
+  <body>
+ <!---->
+ <div id="skipnav">
+   <a href ="#main">Skip to main content</a>
+ </div>
+ <div id="border">
+    <div  id="cruisebanner">
+ <h1 id="subpage">Cruise Vacation Destinations</h1>
+ 
+<!--<div class="info">
+    <p>Which type of vacation should I take?</p>
+    <p>What type of activities should I plan?</p>
+    <p>What type of travel suits me?</p>
+    <p>All of your questions will be answered...</p>
+ </div>-->
+ <nav>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tropical.html">Tropical</a></li>
+    <li><a href="winter.html">Winter</a></li>
+    <li><a href="abroad.html">Abroad</a></li>
+    <li><a href="camping.html">Camping</a></li>
+    <li><a href="cruise.html">Cruise</a></li>
+  </ul>
+</nav>
+</div>
+ <main id="main">
+    <div>
+        <p id="info">
+            Welcome to the Cruise Page!
+        </p>
+    </div>
+    <p id="para">Choose a cruise destination below to find out information about popular food choices and attractions around the area</p>
+    <form method="post" enctype="multipart/form-data" action="processCruise.php">
+    <p>Cruise Destinations<br>
+      <select id="choice" name ="cruise_destination">
+          <option>Choose Destination</option>
+          <option>Avignon, France</option>
+          <option>Glacier Bay, Alaska</option>
+      </select>
+      </p>
+      <input id ="submit" type="submit">
+      </form>
+</main>
+</div>
+  </body>
+</html>

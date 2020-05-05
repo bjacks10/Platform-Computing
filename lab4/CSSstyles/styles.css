@@ -1,0 +1,166 @@
+body{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1em;
+  font-weight: normal;
+  color: navy;
+  text-align: left;
+  margin-left: 10%;
+  margin-right: 10%;
+  widows: 1000px;
+  margin: 0 auto;
+}
+
+h1{
+  font-size: 2.8em;
+  font-weight: bold;
+  color: navy;
+  text-align: center;
+}
+
+h2#email{
+  text-align: center;
+}
+
+h1,h2,h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  margin-left: 1em;
+}
+
+p{
+  margin-left: 1em;
+}
+
+a{
+  color: navy;
+}
+
+#skipnav{
+  top:18px;/*makes sure the skip to main content is within the borders*/
+  left:18px;/*makes sure the skip to main content is within the borders*/
+  font-weight: bold;
+  position: absolute;
+  background-color:white;
+  }
+
+#banner{
+  border-style: solid;
+  color: navy;
+  margin: 5px;
+  background-color:white;
+}
+
+#border{
+  border-style: solid;
+  color: navy;
+  margin: 5px;
+  background-color: lightsteelblue;
+}
+
+#imagelist{
+  align-content: center;
+  margin-left: 46%;
+}
+
+#list{
+  text-align: center;
+}
+
+#info{
+  list-style-type: none;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+nav{
+  clear:left;
+  padding:1.5em;
+  list-style-type: none;
+  font-size: 2em;
+  margin-left: 10%;
+  }
+
+#nav{
+  list-style-type: none;
+  align-content: center;
+  }
+
+nav ul li {
+  float: left;
+  margin-left: 4%;
+  list-style-type: none;
+  }
+nav ul li a {
+  padding: 0.25em 1em;
+  text-decoration: none; /* no underline */
+  background-color:navy; 
+  color:white; 
+  border: 3px solid white;
+  border-top-left-radius: 1em 1em; /* rounded corner! */
+  border-top-right-radius: 1em 1em; /* another rounded corner! */
+  }
+
+/*When hovering over the navigation menu items changes the color of the background and text*/
+nav ul li a:hover, nav ul li a:focus {
+  color:navy;
+  background-color: lightsteelblue;
+  border-color: navy;
+  font-weight: bold;
+  }
+
+/*This is for the div tag for all of the personal links*/
+#links{
+  font-size: 1.5em;
+  }
+
+/*This is for the list items within the unordered list for the personal links*/
+#ullinks li{
+  list-style-type: none;
+  padding:0.4em;
+  }
+
+/*This is for the unordered lists that explain what some of the links are*/
+#notes{
+  margin-left: 1.2em;
+  font-size: 0.8em;
+  }
+
+/*This is for the table in the academic endeavors page*/
+table{
+  border:solid;
+  margin:5%;
+  margin-bottom: 20%;
+  }
+
+caption {
+  font-size:2em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding: 10px;
+  }
+
+/*This is for the column titles*/
+th{
+  padding:.5em;
+  text-align: left;
+  font-size: 1.5em;
+  }
+
+/*This is for all of the table data*/
+td{
+  padding:.5em;
+  padding-right: 5em;
+  font-size: 1.1em; 
+  }
+
+#main{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+#main p{
+    font-size: 1.1em;
+    margin-left: 2em;
+  }
+
+#main h2{
+    font-size: 2em;
+  }

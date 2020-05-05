@@ -1,0 +1,64 @@
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="Styles/styles.css" media="screen">
+    <title>
+        Javascript
+    </title>    
+    <script src="scripts/domDemo.js"></script>
+</head>
+<body>
+    <div id="border">
+        <div id="banner">
+            <h1>Web Portfolio: Javascript</h1>
+            <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="accessibility.html">Accessibility</a>
+                </li>
+                <li>
+                    <a href="usability.html">Usability</a>
+                </li>
+                <li>
+                    <a href="graphics.html">Graphics</a>
+                </li>
+                <li>
+                    <a href="javascript.html">Javascript</a>
+                </li>
+                <li>
+                    <a href="tools.html">Tools</a>
+                </li>
+                <li>
+                    <a href="video.html">Video</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main id="main">
+        <h2 id="jsDom">Javascript: DOM demo</h2>
+     
+        <table id=bankTable>
+            <caption id="bankAccountTitle">Bank Account</caption>
+            <tr>
+                <th scope="col">Account</th>
+                <th scope="col">Balance</th>
+            </tr>
+            <tr>
+                <td>Checking</td>
+                <td id ="checkingBalance">500</td>
+            </tr>
+            <tr>
+                <td>Savings</td>
+                <td id="savingsBalance">1000</td>
+            </tr>
+        </table>
+        <button class="bankAction" onclick="depositSavings()">Deposit $100 Savings</button> <br>   
+        <button class="bankAction" onclick="depositChecking()">Deposit $100 Checking</button>    <br>
+        <button class="bankAction" onclick="emptySavings()">Empty Savings</button>    <br>
+    </main>
+</div>   
+</body>
+</html>
