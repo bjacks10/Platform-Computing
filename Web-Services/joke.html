@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <script>
+            var getJoke = function()
+            {
+                var request = new XMLHttpRequest();
+                request.open("GET", "https://official-joke-api.appspot.com/random_joke",true);
+                request.onload = function()
+                {
+                    var data = JSON.parse(this.response);
+                    var setup = data.setup;
+                    var punchline = data.punchline;
+                    document.getElementById("setup").innerHTML = setup;
+                    document.getElementById("punchline").innerHTML = punchline;
+                    //document.write(setup);
+                    //document.write("<br>" + punchline);
+                };
+                request.send();
+            }
+        </script>
+    </head>
+    <body onload="getJoke()">
+        <h1>Funny Joke</h1>
+        <h3 id= "setup"></h3>
+        <h3 id="punchline"></h3>
+        <button onclick="getJoke()">Get Another Joke</button>
+    </body>
+</html>

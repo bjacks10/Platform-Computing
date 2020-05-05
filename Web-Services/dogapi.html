@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <script>
+            var getDog = function()
+            {
+                var request = new XMLHttpRequest();
+                request.open("GET", "https://dog.ceo/api/breeds/image/random",true);
+                request.onload = function()
+                {
+                    var data = JSON.parse(this.response);
+                    var message = data.message;
+                    var status = data.status;
+                   // document.getElementById("message").innerHTML = message;
+                    document.getElementById("img").src = message;
+                    //document.write(setup);
+                    //document.write("<br>" + punchline);
+                };
+                request.send();
+            }
+        </script>
+    </head>
+    <body onload="getDog()">
+        <h1>Adorable Dogs</h1>
+        <img id = "img" src = ""/> 
+        <h3 id= "message"></h3>
+        <h3 id="status"></h3>
+        <button onclick="getDog()">Get Another Dog</button>
+    </body>
+</html>
